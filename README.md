@@ -54,6 +54,9 @@ By default, the script analyzes `books/frankenstein.txt`. To analyze a different
 - `get_book_text(path)` — opens the given file and returns its full contents as a string
 - `main()` — loads the book, calculates word and character counts, and prints the results
 
+
 **stats.py**
 - `words_in_book(book_text)` — splits the text into words and returns the total word count
 - `counting_characters(book_text)` — loops through the text, lowercases each character, and returns a dictionary mapping each character to how many times it appears
+- `sort_on(character_count_pair)` — helper function used for sorting; given a `(character, count)` tuple, returns just the count
+- `chars_dict_to_sorted_list(sorted_dict)` — converts the character-count dictionary into a list of `(character, count)` tuples, sorted from most to least frequent

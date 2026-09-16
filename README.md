@@ -9,6 +9,7 @@ BookBot is a Python program that analyzes novels and reports their word and char
 🚧 In progress:
 - word counting complete (13/10/2026)
 - character counting complete (13/10/2026)
+- sorting characters by frequency complete (14/10/2026)
 - report formatting coming next
 
 ## Features
@@ -45,8 +46,7 @@ By default, the script analyzes `books/frankenstein.txt`. To analyze a different
 ## Example Output
 
 - Found 75767 total words
-- {'t': 29493, 'h': 19176, 'e': 44538, ' ': 70480, ...}
-
+- [(' ', 70480), ('e', 44538), ('t', 29493), ('a', 25894), ...]
 
 ## How It Works (this specific project, variables can change)
 

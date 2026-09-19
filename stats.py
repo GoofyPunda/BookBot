@@ -17,7 +17,7 @@ def counting_characters(book_text: str) -> dict[str, int]:
 
 
 
-def sort_on(character_count_pair: tuple(str, int)) -> int:
+def sort_on(character_count_pair: tuple[str, int]) -> int:
     return character_count_pair[1]
     
 def chars_dict_to_sorted_list(sorted_dict: dict[str, int]) -> list[tuple[str, int]]:

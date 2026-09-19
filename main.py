@@ -7,13 +7,10 @@ def main() -> None:
     text = get_book_text(book_path)
 
     num_words = words_in_book(text)
-    print(f"Found {num_words} total words")
 
     character_counts = counting_characters(text)
-    # print(character_counts) - This is commented out due to the assignment requirements
 
-    sourted_character_counts_in_dict = chars_dict_to_sorted_list(character_counts)
-    print(sourted_character_counts_in_dict)
+    print_report(book_path, num_words, chars_dict_to_sorted_list(character_counts))
 
 def get_book_text(path: str) -> str:
     with open(path) as f:
@@ -30,6 +27,7 @@ def print_report(book_path: str, word_count: int, character_counts: list[tuple[s
         if character_count_section[0].isalpha():
             print(f"{character_count_section[0]}: {character_count_section[1]}")
 
+    print("============= END ===============")
 
 main()
 

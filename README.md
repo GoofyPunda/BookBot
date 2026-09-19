@@ -50,7 +50,7 @@ python3 main.py books/frankenstein.txt
 
 You can analyze any `.txt` file — place it in the `books/` folder and pass its path as the argument. If no path is given, the program prints a usage message and exits:
 
-Usage - python3 main.py <path_to_book>
+Usage: python3 main.py <path_to_book>
 
 ## Example Output
 
@@ -88,3 +88,9 @@ o: 24494
 - **IndentationError when adding `sys.argv` validation**: Lines inside an `if` block (like the usage message and `sys.exit(1)`) must be indented one level deeper than the `if` itself. Missing this caused `expected an indented block after 'if' statement`. Lesson: code inside any block (`if`, `for`, function body, etc.) always needs consistent, deeper indentation than the line that opens the block.
 
 - **Type hint typo (`tuple(str, int)` vs `tuple[str, int]`)**: Accidentally used parentheses instead of square brackets in a type hint, which tried to call Python's `tuple()` constructor with two arguments instead of writing a valid type annotation, causing a `TypeError`. Lesson: type hints for generics like `tuple`, `list`, and `dict` always use square brackets (`tuple[str, int]`), never parentheses.
+
+## Other Mentions
+
+**Indentation Problems**
+- As I was writing the project, some of the code that I had originally written had to be removed later on to proceed. I had attempted to comment them out, but due to indentationErrors, I had to delete them fully
+- Throughout this project, the Python I had done almost entirely done on my own, but I had asked peers in my class for help at time, all of which at the very start or end of the project. For Linux, I only knew the basics to allow me to add, commit, push and check status. I did have to use google to help with certian parts of the Linux part as I simply didn't know enough to fully allow me to progress through the project. Everything else is my work
